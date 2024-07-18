@@ -1,0 +1,233 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    /* font-family: "Playwrite FR Trad", cursive; */
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;/* placed in its normal position */
+}
+#navbar{
+    display: flex;/* to make child element into inline */
+    width: 85%; 
+    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 130px;
+}
+
+.listitem{
+    list-style: none; 
+    display: inline;
+    margin: 10px 20px;
+    font-weight: 700;
+} 
+
+li a:hover{
+    color: blue;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+#title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+#title h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+#title a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+#images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+
+}
+.imagegroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 2s;
+}
+#images:hover #shape{
+    bottom: 70px;
+}
+#images:hover #girl{
+    left: 40%;
+}
+
+#about{
+    margin: 22% 8% 0 8%;
+}
+#heading{
+    text-align: center;
+}
+#heading h2{
+    font-size: 30px;
+}
+#heading p{
+    font-size: 20px;
+    color: green;
+}
+#content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+#image img{
+    width: 80%;
+}
+#content_details{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+}
+#information{
+    margin-top: 2rem;
+}
+.info{
+    margin-top: 1rem;
+}
+.info span{
+    margin-left: 1rem;
+}
+#skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+#Skills{
+    margin: 8% 8% 0% 8%;
+}
+#skill_img img{
+    width: 80%;
+}
+.bar_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    position: relative;
+}
+.bar_container span{
+    font-weight: 800;
+    font-size: 20px;
+
+}
+.bar{
+    width: 90%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+#html_bar{
+    width: 85%;
+    background-color: orange;
+}
+#css_bar{
+    width: 78%;
+    background-color: orange;
+}
+#js_bar{
+    width: 79%;
+    background-color: orange;
+}
+#react_bar{
+    width: 75%;
+    background-color: orange;
+}
+#contact{
+    margin-top: 5%;
+}
+.icon_set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.icon,.up-arrow {
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+    margin: 0px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.icon i{
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, yellow, rgb(161, 109, 13));
+    animation: shake 0.75s;
+}
+.icon:hover i{
+    color: white;
+}
+@keyframes shake{
+    0%{
+        transform:rotate(15deg);
+    }
+    25%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    80%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+footer{
+    margin: 3rem 0px;
+}
+footer p{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.up-arrow{
+    background-image: linear-gradient(to bottom right, yellow, rgb(161, 109, 13));
+    float: right;
+    margin: 10px 50px 50px 0px;
+
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
